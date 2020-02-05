@@ -111,7 +111,7 @@ module.exports = _class(superClass,{
 Only public block is mandatory.
 If you only have private variables and not methods then you don't need for the private block.
 You can simply create them dynamically and they will become private by default
-```
+
 
 # getObjectKeys
 
