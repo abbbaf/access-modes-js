@@ -63,7 +63,7 @@ const Person = _class({
 
 const _class = require('access-modes')
 
-module.exports = _class(superClass,{
+const varname = _class(superClass,{
 
     static: {
         /*
