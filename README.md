@@ -4,10 +4,10 @@ There are many schemes which give some support for private access.
 However most of them suffer from at least one of the following problems.
 
 1. They rely on the use of closures to create private members. 
-   In this scheme you don't have private access for the class but for the objec.
+   In this schemes you don't have private access for the class but for the object.
    This means you cannot access private members of objects of the same class which are not
-   the object itself (this).  An access to other objects private members can be helpful when
-   create a method which compares or copies an object.
+   the object itself ('this').  An access to other objects private members can be helpful when, 
+   for exampe, you which to build a method for comapring two objects.
    
 2. They requires you to put extra code which makes your code less clean.
 
@@ -118,6 +118,7 @@ You can simply create them dynamically and they will become private by default
 Every object is create with a special private method which returns the keys of the object as they appear in the class structure above.
 For exampe:  using this method for the person class above will return:
     {   public : ['name', 'compare'] ,  private : ['name','init] }
+
 
 
 
