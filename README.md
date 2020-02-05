@@ -29,30 +29,20 @@ Example:
 const _class = require('access-modes')
 
 const Person = _class({
-
     public : {
         getName : function() {
             return this.name
-        },
-        
+        }, 
         compare: function(person) {
             return this.name == this.cast(person).name
-        }
-        
-        
-    },
-    
+        }       
+    },    
     private : {
-    
-        name : "", 
-        
+        name : "",  
         init : function(name) {
             this.name = name
-        }
-    
+        } 
     }
-
-
 })
 
 
@@ -62,33 +52,23 @@ const Person = _class({
 
 
 "use-strict"
-
 const _class = require('access-modes')
-
 module.exports = _class(superClass,{
-
     static: {
-
         /*
             Non constants static variables and methods 
         */
-
         constants : {
             /*
                 Static constant variables and methods
             */
         }
-
     },
-
     public : {
-
         /*
             Public variables and methods
         */
-
     },
-
     protected : { 
         /*
             Protected variables and methods.
@@ -96,19 +76,17 @@ module.exports = _class(superClass,{
             but can be overriden by any subclass
         */
     },
-
-    private : {
-    
+    private : {  
         init : function() {
             /*
               Put initialization code here
               This method can also be places in the public or protected blocks
             */
         }
-
         /*
         Private variables and methods.
         These variables and methods cannot be accessed outside the class
+        Dynamically created members inside this code are private by defualt
         */
     }
 })
