@@ -34,11 +34,11 @@ const Person = _class({
 
     public : {
    
-        getName : function() {    
+        getName() {    
             return this.name
         }, 
         
-        compare: function(person) {     
+        compare(person) {     
             return this.name == this.cast(person).name
             
         }   
@@ -47,7 +47,7 @@ const Person = _class({
     
     private : {
         name : "",      
-        init : function(name) {    
+        init(name) {    
             this.name = name     
         }     
     }   
@@ -92,7 +92,7 @@ const varname = _class(superClass,{
     
     private : {  
     
-        init : function() {
+        init() {
             /*
               Put initialization code here
               This method can also be places in the public or protected blocks
