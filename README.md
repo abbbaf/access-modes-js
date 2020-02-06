@@ -12,7 +12,7 @@ However most of them suffer from at least one of the following problems.
 2. They requires you to put extra code which makes your code less clean.
 
 
-This module doesn't use closures and for most cases you code normally like with regular classes (by using 'this' to access  any of the members).
+This module doesn't use closures and for most cases your code normally like with regular classes (by using 'this' to access  any of the members).
 Also, to create methods and variables you only need to create a key (you only need the this keyword to access them afterwards),
 this make it even cleaner compare to ES5 type classes.
 
