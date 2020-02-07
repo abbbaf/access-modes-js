@@ -1,3 +1,7 @@
+# What is this?
+
+This module enables other modules to use class access modifiers (public, protected and private), which lacks in JavaScript ES5 and ES6. This module gives a solution for developers who don't want or can't use typescript, which does support access modifier.
+
 # Why this module?
 
 There are many schemes which give some support for private access.
